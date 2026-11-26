@@ -2,7 +2,7 @@
 
 Стек: Vite, Handlebars, Sass.
 
-Сайт: [Netlify](ССЫЛКА)
+Сайт: [prismatic-praline-ab7fde.netlify.app](https://prismatic-praline-ab7fde.netlify.app/)
 
 ## Запуск
 

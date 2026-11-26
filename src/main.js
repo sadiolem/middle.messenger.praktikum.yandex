@@ -6,7 +6,7 @@ import './styles/main.scss';
 const root = document.getElementById('app');
 
 if (!root) {
-    throw new Error("Root (#app) element is missing");
+    throw new Error('Root (#app) element is missing');
 }
 
 const currentPath = window.location.pathname;
