@@ -1,0 +1,16 @@
+@use "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--default-font-size);
+  color: var(--primary-text-color);
+  background-color: var(--page-background-color);
+  -webkit-font-smoothing: antialiased;
+}
