@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite build && vite preview"
+    "build": "vite build",
+    "start": "npm run build && vite preview"
   },
   "devDependencies": {
     "sass": "^1.108.2",
