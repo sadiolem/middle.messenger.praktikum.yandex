@@ -1,5 +1,7 @@
 # Мессенджер
 
+Учебный проект веб-мессенджер.
+
 Стек: Vite, Handlebars, Sass.
 
 Сайт: [prismatic-praline-ab7fde.netlify.app](https://prismatic-praline-ab7fde.netlify.app/)

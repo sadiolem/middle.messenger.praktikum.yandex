@@ -9,6 +9,7 @@ import formField from './components/form-field/form-field.hbs?raw';
 import input from './components/input/input.hbs?raw';
 import link from './components/link/link.hbs?raw';
 import message from './components/message/message.hbs?raw';
+import modal from './components/modal/modal.hbs?raw';
 import profileField from './components/profile-field/profile-field.hbs?raw';
 import title from './components/title/title.hbs?raw';
 
@@ -25,6 +26,7 @@ const partials = {
     'input': input,
     'link': link,
     'message': message,
+    'modal': modal,
     'profile-field': profileField,
     'title': title,
     'auth-layout': authLayout,

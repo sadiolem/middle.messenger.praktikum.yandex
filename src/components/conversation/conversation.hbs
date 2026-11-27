@@ -9,18 +9,18 @@
 
     <div class="conversation__messages">
         <p class="conversation__date"><time>19 июня</time></p>
-        <div class="conversation__list">
+        <ul class="conversation__list">
             {{#each messages}}
-                <div class="conversation__item{{#if is_own}} conversation__item_own{{/if}}">
+                <li class="conversation__item{{#if is_own}} conversation__item_own{{/if}}">
                     {{> message}}
-                </div>
+                </li>
             {{/each}}
-        </div>
+        </ul>
     </div>
 
     <form class="conversation__form">
         {{> button icon="attach_file" variant="icon" ariaLabel="Прикрепить файл"}}
-        {{> input name="message" variant="filled" placeholder="Сообщение"}}
+        {{> input name="message" variant="filled" placeholder="Сообщение" ariaLabel="Сообщение"}}
         {{> button icon="arrow_forward" variant="round" type="submit" ariaLabel="Отправить"}}
     </form>
 </section>

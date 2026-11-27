@@ -1,3 +1,35 @@
+.avatar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+
+  &__file {
+    position: relative;
+    font-size: var(--small-font-size);
+    color: var(--link-color);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  &__file-text {
+    display: block;
+    max-width: 150px;
+  }
+
+  &__input:focus ~ &__file-text {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+}
+
 .profile {
   width: 100%;
   max-width: 510px;
