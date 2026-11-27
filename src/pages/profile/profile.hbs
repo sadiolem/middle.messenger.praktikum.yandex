@@ -1,15 +1,15 @@
 {{#> profile-layout}}
     <div class="profile">
-        <div class="profile__name">
+        <div class="profile__title-wrapper">
             {{> title level=1 text=user.display_name}}
         </div>
         <div class="profile__section">
-            {{> profile-field label="Почта" value=user.email readonly=true}}
-            {{> profile-field label="Логин" value=user.login readonly=true}}
-            {{> profile-field label="Имя" value=user.first_name readonly=true}}
-            {{> profile-field label="Фамилия" value=user.second_name readonly=true}}
-            {{> profile-field label="Имя в чате" value=user.display_name readonly=true}}
-            {{> profile-field label="Телефон" value=user.phone readonly=true}}
+            {{> profile-field label="Почта" value=user.email viewOnly=true}}
+            {{> profile-field label="Логин" value=user.login viewOnly=true}}
+            {{> profile-field label="Имя" value=user.first_name viewOnly=true}}
+            {{> profile-field label="Фамилия" value=user.second_name viewOnly=true}}
+            {{> profile-field label="Имя в чате" value=user.display_name viewOnly=true}}
+            {{> profile-field label="Телефон" value=user.phone viewOnly=true}}
         </div>
         <ul class="profile__section profile__actions">
             <li>{{> link href="/settings/edit" text="Изменить данные"}}</li>

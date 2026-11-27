@@ -1,6 +1,7 @@
 .conversation {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   padding: 0 20px;
 
   &__header {
@@ -17,7 +18,7 @@
     }
   }
 
-  &__avatar {
+  &__avatar-wrapper {
     flex-shrink: 0;
     width: 34px;
   }
@@ -39,9 +40,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
 
   &__item {

@@ -1,10 +1,9 @@
 .chats-page {
-  display: grid;
-  grid-template-columns: 310px 1fr;
-  grid-template-rows: minmax(0, 1fr);
+  display: flex;
   min-height: 0;
 
   &__placeholder {
+    flex-grow: 1;
     align-self: center;
     margin: 0;
     font-size: var(--small-font-size);
