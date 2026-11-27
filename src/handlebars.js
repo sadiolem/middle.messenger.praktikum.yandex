@@ -7,6 +7,7 @@ import chatSidebar from './components/chat-sidebar/chat-sidebar.hbs?raw';
 import conversation from './components/conversation/conversation.hbs?raw';
 import formField from './components/form-field/form-field.hbs?raw';
 import input from './components/input/input.hbs?raw';
+import link from './components/link/link.hbs?raw';
 import message from './components/message/message.hbs?raw';
 import profileField from './components/profile-field/profile-field.hbs?raw';
 import title from './components/title/title.hbs?raw';
@@ -21,6 +22,7 @@ const partials = {
     'conversation': conversation,
     'form-field': formField,
     'input': input,
+    'link': link,
     'message': message,
     'profile-field': profileField,
     'title': title,

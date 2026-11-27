@@ -1,0 +1,21 @@
+.auth-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 340px;
+    padding: 50px 30px 20px;
+    border-radius: var(--content-border-radius);
+    box-shadow: var(--default-shadow);
+
+    > .title {
+      text-align: center;
+    }
+  }
+}
