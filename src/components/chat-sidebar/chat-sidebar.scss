@@ -1,6 +1,8 @@
 .chat-sidebar {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+  width: 310px;
   padding-top: 20px;
   border-right: 1px solid var(--primary-border-color);
   background-color: var(--sidebar-background-color);
