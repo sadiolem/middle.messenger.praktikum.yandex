@@ -42,3 +42,10 @@ body {
   flex-grow: 1;
   overflow-y: auto;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
