@@ -1,0 +1,20 @@
+{{#> profile-layout}}
+    <div class="profile">
+        <div class="profile__name">
+            {{> title level=1 text=user.display_name}}
+        </div>
+        <div class="profile__section">
+            {{> profile-field label="Почта" value=user.email readonly=true}}
+            {{> profile-field label="Логин" value=user.login readonly=true}}
+            {{> profile-field label="Имя" value=user.first_name readonly=true}}
+            {{> profile-field label="Фамилия" value=user.second_name readonly=true}}
+            {{> profile-field label="Имя в чате" value=user.display_name readonly=true}}
+            {{> profile-field label="Телефон" value=user.phone readonly=true}}
+        </div>
+        <ul class="profile__section profile__actions">
+            <li>{{> link href="/settings/edit" text="Изменить данные"}}</li>
+            <li>{{> link href="/settings/password" text="Изменить пароль"}}</li>
+            <li>{{> button text="Выйти" variant="text" danger=true}}</li>
+        </ul>
+    </div>
+{{/profile-layout}}

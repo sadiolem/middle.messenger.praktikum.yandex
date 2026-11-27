@@ -1,0 +1,26 @@
+.profile-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--primary-border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__label {
+    flex-shrink: 0;
+  }
+
+  &__value {
+    color: var(--secondary-text-color);
+    text-align: right;
+  }
+
+  .input {
+    color: var(--secondary-text-color);
+    text-align: right;
+  }
+}

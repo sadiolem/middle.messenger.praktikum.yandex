@@ -1,0 +1,14 @@
+.chats-page {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  min-height: 0;
+
+  &__placeholder {
+    align-self: center;
+    margin: 0;
+    font-size: var(--small-font-size);
+    color: var(--secondary-text-color);
+    text-align: center;
+  }
+}

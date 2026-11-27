@@ -1,0 +1,26 @@
+<section class="conversation">
+    <header class="conversation__header">
+        <div class="conversation__avatar">
+            {{> avatar src=chat.avatar}}
+        </div>
+        {{> title level=2 text=chat.title}}
+        {{> button icon="more_vert" variant="icon" ariaLabel="Меню чата"}}
+    </header>
+
+    <div class="conversation__messages">
+        <p class="conversation__date"><time>19 июня</time></p>
+        <ul class="conversation__list">
+            {{#each messages}}
+                <li class="conversation__item{{#if is_own}} conversation__item_own{{/if}}">
+                    {{> message}}
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <form class="conversation__form">
+        {{> button icon="attach_file" variant="icon" ariaLabel="Прикрепить файл"}}
+        {{> input name="message" variant="filled" placeholder="Сообщение"}}
+        {{> button icon="arrow_forward" variant="round" type="submit" ariaLabel="Отправить"}}
+    </form>
+</section>

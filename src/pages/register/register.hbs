@@ -1,0 +1,17 @@
+{{#> auth-layout title="Регистрация"}}
+    <form class="auth-layout__form">
+        <div class="auth-layout__fields">
+            {{> form-field label="Почта" name="email" type="email"}}
+            {{> form-field label="Логин" name="login"}}
+            {{> form-field label="Имя" name="first_name"}}
+            {{> form-field label="Фамилия" name="second_name"}}
+            {{> form-field label="Телефон" name="phone" type="tel"}}
+            {{> form-field label="Пароль" name="password" type="password"}}
+            {{> form-field label="Пароль (ещё раз)" name="password_repeat" type="password"}}
+        </div>
+        <div class="auth-layout__actions">
+            {{> button text="Зарегистрироваться" type="submit"}}
+            {{> link href="/" text="Войти"}}
+        </div>
+    </form>
+{{/auth-layout}}

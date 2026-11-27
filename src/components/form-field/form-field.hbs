@@ -1,0 +1,7 @@
+<div class="form-field{{#if error}} form-field_invalid{{/if}}">
+    <label class="form-field__label" for="{{name}}">{{label}}</label>
+    {{> input name=name type=type value=value}}
+    {{#if error}}
+        <p class="form-field__error">{{error}}</p>
+    {{/if}}
+</div>

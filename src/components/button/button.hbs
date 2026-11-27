@@ -1,0 +1,11 @@
+<button
+    class="button{{#if variant}} button_{{variant}}{{/if}}{{#if danger}} button_danger{{/if}}"
+    type="{{#if type}}{{type}}{{else}}button{{/if}}"
+    {{#if ariaLabel}}aria-label="{{ariaLabel}}"{{/if}}
+>
+    {{#if icon}}
+        <span class="material-symbols-rounded">{{icon}}</span>
+    {{else}}
+        {{text}}
+    {{/if}}
+</button>

@@ -1,0 +1,40 @@
+.auth-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 340px;
+    padding: 50px 30px 20px;
+    border-radius: var(--content-border-radius);
+    box-shadow: var(--default-shadow);
+
+    > .title {
+      text-align: center;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+}
