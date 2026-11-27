@@ -1,0 +1,51 @@
+@use "variables";
+@use "page-nav";
+@use "../components/avatar/avatar";
+@use "../components/button/button";
+@use "../components/chat-item/chat-item";
+@use "../components/chat-sidebar/chat-sidebar";
+@use "../components/conversation/conversation";
+@use "../components/form-field/form-field";
+@use "../components/input/input";
+@use "../components/link/link";
+@use "../components/message/message";
+@use "../components/modal/modal";
+@use "../components/profile-field/profile-field";
+@use "../components/title/title";
+@use "../layouts/auth-layout";
+@use "../layouts/profile-layout";
+@use "../pages/chats/chats";
+@use "../pages/error/error";
+@use "../pages/profile/profile";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--default-font-size);
+  line-height: 1.4;
+  color: var(--primary-text-color);
+  background-color: var(--page-background-color);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}

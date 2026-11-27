@@ -1,0 +1,12 @@
+{{#> auth-layout title="Вход"}}
+    <form class="auth-layout__form">
+        <div class="auth-layout__fields">
+            {{> form-field label="Логин" name="login"}}
+            {{> form-field label="Пароль" name="password" type="password"}}
+        </div>
+        <div class="auth-layout__actions">
+            {{> button text="Войти" type="submit"}}
+            {{> link href="/sign-up" text="Нет аккаунта?"}}
+        </div>
+    </form>
+{{/auth-layout}}

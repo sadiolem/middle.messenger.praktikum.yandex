@@ -1,0 +1,11 @@
+<div class="message{{#if is_own}} message_own{{/if}}{{#if image}} message_image{{/if}}">
+    {{#if image}}
+        <img class="message__image" src="{{image}}" alt="">
+    {{else}}
+        <p class="message__text">{{content}}</p>
+    {{/if}}
+    <time class="message__time">
+        {{#if is_read}}<span class="message__status material-symbols-rounded">done_all</span>{{/if}}
+        {{time}}
+    </time>
+</div>

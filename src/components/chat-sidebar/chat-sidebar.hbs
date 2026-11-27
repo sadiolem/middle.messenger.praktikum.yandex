@@ -1,0 +1,14 @@
+<nav class="chat-sidebar">
+    <a class="chat-sidebar__profile-link" href="/settings">
+        Профиль
+        <span class="material-symbols-rounded">chevron_right</span>
+    </a>
+    <form class="chat-sidebar__search">
+        {{> input name="search" type="search" variant="filled" placeholder="Поиск по чатам" ariaLabel="Поиск по чатам"}}
+    </form>
+    <ul class="chat-sidebar__list">
+        {{#each chats}}
+            <li>{{> chat-item}}</li>
+        {{/each}}
+    </ul>
+</nav>

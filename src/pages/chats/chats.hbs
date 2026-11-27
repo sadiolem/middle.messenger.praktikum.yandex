@@ -1,0 +1,9 @@
+<main class="chats-page">
+    <h1 class="visually-hidden">Чаты</h1>
+    {{> chat-sidebar}}
+    {{#if chat}}
+        {{> conversation}}
+    {{else}}
+        <p class="chats-page__placeholder">Выберите чат, чтобы отправить сообщение</p>
+    {{/if}}
+</main>

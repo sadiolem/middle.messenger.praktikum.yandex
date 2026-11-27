@@ -1,0 +1,20 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  &__label {
+    font-size: var(--caption-font-size);
+    color: var(--secondary-text-color);
+  }
+
+  &__error {
+    margin: 4px 0 0;
+    font-size: var(--caption-font-size);
+    color: var(--danger-color);
+  }
+
+  &_invalid .input {
+    color: var(--danger-color);
+  }
+}

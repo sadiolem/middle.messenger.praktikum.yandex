@@ -1,0 +1,43 @@
+.chat-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 310px;
+  padding-top: 20px;
+  border-right: 1px solid var(--primary-border-color);
+  background-color: var(--sidebar-background-color);
+
+  &__profile-link {
+    display: inline-flex;
+    align-self: flex-end;
+    align-items: center;
+    margin: 0 10px 20px;
+    font-size: var(--small-font-size);
+    color: var(--secondary-text-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary-text-color);
+    }
+
+    .material-symbols-rounded {
+      font-size: 18px;
+    }
+  }
+
+  &__search {
+    padding: 0 10px 14px;
+
+    .input {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    list-style: none;
+  }
+}
