@@ -6,9 +6,9 @@
     </aside>
     <main class="profile-layout__content">
         <label class="profile-layout__avatar">
+            <input class="profile-layout__avatar-input" type="file" name="avatar" accept="image/*">
             {{> avatar src=user.avatar}}
             <span class="profile-layout__avatar-hint">Поменять аватар</span>
-            <input class="profile-layout__avatar-input" type="file" name="avatar" accept="image/*">
         </label>
         {{> @partial-block}}
     </main>

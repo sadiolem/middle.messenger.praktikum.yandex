@@ -60,7 +60,8 @@
     transition: opacity var(--default-transition);
   }
 
-  &__avatar:hover &__avatar-hint {
+  &__avatar:hover &__avatar-hint,
+  &__avatar-input:focus ~ &__avatar-hint {
     opacity: 1;
   }
 
