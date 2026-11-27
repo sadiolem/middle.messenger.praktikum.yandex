@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  flex-grow: 1;
   padding: 20px;
 
   &__card {
@@ -17,5 +17,24 @@
     > .title {
       text-align: center;
     }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
   }
 }

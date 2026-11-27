@@ -1,4 +1,5 @@
 @use "variables";
+@use "page-nav";
 @use "../components/avatar/avatar";
 @use "../components/button/button";
 @use "../components/chat-item/chat-item";
@@ -10,7 +11,11 @@
 @use "../components/message/message";
 @use "../components/profile-field/profile-field";
 @use "../components/title/title";
-@use "../layouts/auth";
+@use "../layouts/auth-layout";
+@use "../layouts/profile-layout";
+@use "../pages/chats/chats";
+@use "../pages/error/error";
+@use "../pages/profile/profile";
 
 *,
 *::before,
@@ -19,11 +24,20 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0;
   font-family: var(--font-family);
   font-size: var(--default-font-size);
   line-height: 1.4;
   color: var(--primary-text-color);
   background-color: var(--page-background-color);
-  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
 }

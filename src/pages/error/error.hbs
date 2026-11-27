@@ -1,5 +1,5 @@
-<main>
-    <h1>{{errorCode}}</h1>
-    <p>{{errorMessage}}</p>
-    <a href="/messenger">Назад к чатам</a>
+<main class="error-page">
+    <h1 class="error-page__code">{{errorCode}}</h1>
+    <p class="error-page__message">{{errorMessage}}</p>
+    {{> link href="/messenger" text="Назад к чатам"}}
 </main>

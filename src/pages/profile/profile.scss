@@ -1,0 +1,37 @@
+.profile {
+  width: 100%;
+  max-width: 510px;
+
+  &__name {
+    margin-bottom: 60px;
+    text-align: center;
+
+    .title {
+      font-size: var(--default-font-size);
+      font-weight: var(--semibold-font-weight);
+    }
+  }
+
+  &__section {
+    margin: 0 0 40px;
+  }
+
+  &__actions {
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--primary-border-color);
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__submit {
+    width: 280px;
+    margin: 60px auto 0;
+  }
+}

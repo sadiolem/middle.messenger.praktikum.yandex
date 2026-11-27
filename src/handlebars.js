@@ -12,7 +12,8 @@ import message from './components/message/message.hbs?raw';
 import profileField from './components/profile-field/profile-field.hbs?raw';
 import title from './components/title/title.hbs?raw';
 
-import authLayout from './layouts/auth.hbs?raw';
+import authLayout from './layouts/auth-layout.hbs?raw';
+import profileLayout from './layouts/profile-layout.hbs?raw';
 
 const partials = {
     'avatar': avatar,
@@ -27,6 +28,7 @@ const partials = {
     'profile-field': profileField,
     'title': title,
     'auth-layout': authLayout,
+    'profile-layout': profileLayout,
 };
 
 Object.entries(partials).forEach(([name, template]) => {

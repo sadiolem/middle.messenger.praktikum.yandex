@@ -1,0 +1,15 @@
+{{#> profile-layout}}
+    <form class="profile">
+        <div class="profile__section">
+            {{> profile-field label="Почта" name="email" type="email" value=user.email}}
+            {{> profile-field label="Логин" name="login" value=user.login}}
+            {{> profile-field label="Имя" name="first_name" value=user.first_name}}
+            {{> profile-field label="Фамилия" name="second_name" value=user.second_name}}
+            {{> profile-field label="Имя в чате" name="display_name" value=user.display_name}}
+            {{> profile-field label="Телефон" name="phone" type="tel" value=user.phone}}
+        </div>
+        <div class="profile__submit">
+            {{> button text="Сохранить" type="submit"}}
+        </div>
+    </form>
+{{/profile-layout}}

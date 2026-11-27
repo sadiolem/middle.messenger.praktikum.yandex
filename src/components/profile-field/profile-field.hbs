@@ -1,4 +1,9 @@
 <div class="profile-field">
-    <label class="profile-field__label" for="{{name}}">{{label}}</label>
-    {{> input name=name type=type value=value variant="borderless" readonly=readonly}}
+    {{#if readonly}}
+        <span class="profile-field__label">{{label}}</span>
+        <span class="profile-field__value">{{value}}</span>
+    {{else}}
+        <label class="profile-field__label" for="{{name}}">{{label}}</label>
+        {{> input name=name type=type value=value variant="borderless"}}
+    {{/if}}
 </div>
