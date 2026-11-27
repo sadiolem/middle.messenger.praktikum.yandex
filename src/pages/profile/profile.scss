@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 510px;
 
-  &__name {
+  &__title-wrapper {
     margin-bottom: 60px;
     text-align: center;
 
@@ -30,7 +30,7 @@
     }
   }
 
-  &__submit {
+  &__button-wrapper {
     width: 280px;
     margin: 60px auto 0;
   }

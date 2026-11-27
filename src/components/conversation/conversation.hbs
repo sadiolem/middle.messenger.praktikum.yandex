@@ -1,6 +1,6 @@
 <section class="conversation">
     <header class="conversation__header">
-        <div class="conversation__avatar">
+        <div class="conversation__avatar-wrapper">
             {{> avatar src=chat.avatar}}
         </div>
         {{> title level=2 text=chat.title}}
@@ -9,13 +9,13 @@
 
     <div class="conversation__messages">
         <p class="conversation__date"><time>19 июня</time></p>
-        <ul class="conversation__list">
+        <div class="conversation__list">
             {{#each messages}}
-                <li class="conversation__item{{#if is_own}} conversation__item_own{{/if}}">
+                <div class="conversation__item{{#if is_own}} conversation__item_own{{/if}}">
                     {{> message}}
-                </li>
+                </div>
             {{/each}}
-        </ul>
+        </div>
     </div>
 
     <form class="conversation__form">
