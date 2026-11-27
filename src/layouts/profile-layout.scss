@@ -39,9 +39,10 @@
 
   &__avatar {
     position: relative;
+    display: block;
     width: 130px;
     margin-bottom: 20px;
-    cursor: pointer;
+    border-radius: 50%;
   }
 
   &__avatar-hint {
@@ -61,14 +62,7 @@
   }
 
   &__avatar:hover &__avatar-hint,
-  &__avatar-input:focus ~ &__avatar-hint {
+  &__avatar:focus &__avatar-hint {
     opacity: 1;
-  }
-
-  &__avatar-input {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
   }
 }

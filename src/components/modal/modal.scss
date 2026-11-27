@@ -1,0 +1,25 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(0 0 0 / 40%);
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 340px;
+    padding: 40px 30px 30px;
+    border-radius: var(--content-border-radius);
+    text-align: center;
+    background-color: var(--page-background-color);
+    box-shadow: var(--default-shadow);
+
+    .title {
+      font-size: var(--default-font-size);
+    }
+  }
+}

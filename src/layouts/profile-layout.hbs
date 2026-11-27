@@ -5,11 +5,11 @@
         </a>
     </aside>
     <main class="profile-layout__content">
-        <label class="profile-layout__avatar">
-            <input class="profile-layout__avatar-input" type="file" name="avatar" accept="image/*">
+        <!-- временно ссылка из-за статики, потом будет кнопка -->
+        <a class="profile-layout__avatar" href="/settings/avatar">
             {{> avatar src=user.avatar}}
             <span class="profile-layout__avatar-hint">Поменять аватар</span>
-        </label>
+        </a>
         {{> @partial-block}}
     </main>
 </div>

@@ -8,6 +8,11 @@ export const ProfilePage = {
     context: { user },
 };
 
+export const ProfileAvatarPage = {
+    template: profileTemplate,
+    context: { user, isAvatarModalOpen: true },
+};
+
 export const ProfileEditPage = {
     template: profileEditTemplate,
     context: { user },

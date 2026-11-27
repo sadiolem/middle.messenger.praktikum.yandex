@@ -1,4 +1,6 @@
 .page-nav {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
